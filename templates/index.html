@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wikipedia Scraper</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>WIKIPEDIA</h1>
+    </header>
+    <div id="container">
+      <div id="content">
+        <div class="column">
+          <form method="post">
+            <label for="input">Enter URL or page title:</label><br />
+            <input type="text" id="input" name="url" required /><br />
+            <button type="submit">Scrape</button>
+          </form>
+        </div>
+        <div class="column">
+          <textarea id="scrapedContent" rows="30" cols="50" readonly>
+{{ content }}</textarea
+          >
+        </div>
+      </div>
+      <div id="sidebar">
+        <h2>Choose Language</h2>
+        <div class="dropdown">
+          <div class="translate">
+            <select id="languageSelect">
+              <option value="te">Telugu</option>
+              <option value="hi">Hindi</option>
+              <option value="ta">Tamil</option>
+            </select>
+            <button id="fetchButton">Translate</button>
+          </div>
+        </div>
+        <div id="translatedContentBox">
+          <textarea id="translatedText"></textarea>
+        </div>
+      </div>
+    </div>
+    <script src="static\script.js"></script>
+  </body>
+</html>

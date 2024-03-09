@@ -1,0 +1,129 @@
+/* styles.css */
+header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #71797E;
+  color: #fff;
+}
+
+header h1 {
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* Stretch items to full height */
+  height: 100vh;
+}
+
+#content, #sidebar {
+  width: 50%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#content {
+  display: flex; /* Use flexbox to control column layout */
+  flex-direction: column; /* Stack columns vertically */
+}
+
+.column { /* Take up remaining space */
+  display: flex; /* Use flexbox to center content */
+  flex-direction: column; /* Stack content vertically */
+}
+
+form {
+  flex: auto;
+  text-align: center;
+  flex-grow: 1; /* Grow to fill remaining space */
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#sidebar {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.dropdown {
+  margin-bottom: 10px;
+}
+
+select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.translate button {
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.translate button:hover {
+  background-color: #218838;
+}
+
+#translatedContentBox {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px; /* Add margin to separate it from the dropdown */
+  min-height: 450px; /* Adjust height as needed */
+}
+
+#translatedText {
+  width: 100%; /* Set the width to fill the container */
+  height: 450px; /* Set the height as desired */
+  resize: vertical; /* Allow vertical resizing */
+  padding: 10px; /* Add padding for better readability */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  font-size: 16px; /* Set the font size as desired */
+}
